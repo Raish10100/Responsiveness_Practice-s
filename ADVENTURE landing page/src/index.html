@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE Landing Page</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <h1 class="logo">ADVENTURE</h1>
+        
+            <ul class="nav-links">
+                <li ><a href="#" class="active">Home</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">ContactUs</a></li>
+            </ul>
+            <img class="menu-btn" src="../assest/menu-btn.png" />
+    
+    </nav>
+    <header>
+       <div class="header-content">
+        <h2>Explore The Colourful World</h2>
+        <div class="line"></div>
+        <h1>A WONDERFUL GIFT</h1>
+        <a href="#" class="ctn">Learn More</a>
+       </div>
+    </header>
+
+
+<!-- == Upcomming Events == -->
+<section class="upcomming-events">
+    <h3 class="event-title">Upcomming Events</h3>
+    <div class="line"></div>
+    <div class="event-content">
+            <div class="col">
+                <img src="../assest/img1.png" alt="">
+                <h2>Everest Camp Trek</h2>
+                <p class="event-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quidem? Dolore eius nesciunt voluptatem officiis!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="../assest/img2.png" alt="">
+                <h2>Walking Holidays</h2>
+                <p class="event-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quidem? Dolore eius nesciunt voluptatem officiis!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+</section>
+
+<!-- == Explore world == -->
+<section class="explore-world">
+    <div class="explore-world-content">
+        <h1 class="title">Explore The World</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quidem? Dolore eius nesciunt voluptatem officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati nam sapiente expedita eos minima odit, error accusantium. Earum a ab quam mollitia dolorum necessitatibus dicta labore similique explicabo maiores.</p>
+        <div class="ctn">Learn More</div>
+    </div>
+</section>
+
+<!-- == upcoming tours == -->
+<section class="tours">
+    <div class="row">
+        <div class="col content-col">
+            <h1 class="title">UPCOMING TOURS & DESTINATION</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet tenetur, vero vel eos cupiditate dolorum ipsam
+                facilis quisquam itaque nisi minus eum maiores qui voluptatem sed vitae commodi tempora temporibus.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col image-col">
+            <div class="image-gallery">
+                <img src="../assest/img3.png" alt="">
+                <img src="../assest/img4.png" alt="">
+                <img src="../assest/img5.png" alt="">
+                <img src="../assest/img6.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas corrupti ipsam obcaecati iure possimus libero dolore omnis totam quidem et.</p>
+    <p>Copyright &copy 2024 outdoor adventure</p>
+</footer>
+
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+        let showNavlinks = true;
+        menuBtn.addEventListener('click', () => {
+            navLinks.style.marginTop = showNavlinks ? "0px" : "-1200px";
+            showNavlinks = !showNavlinks; 
+        });
+    </script>
+    
+</body>
+</html>
